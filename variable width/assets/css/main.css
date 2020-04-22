@@ -1,0 +1,234 @@
+/* Table of Contents:
+1.0.0 Sola Normalize
+2.0.0 Mobile Styles (default - mobile first)
+            2.1.0 Homepage 
+            2.2.0 Entry Content / Elements Page
+            2.3.0 General Content
+            2.4.0 Sermons
+            2.5.0 
+            2.6.0 
+            2.7.0 
+            2.8.0 
+            2.9.0 
+            2.10.0 Browse Page: Topics
+            2.11.0 
+            2.12.0 
+            2.13.0 
+            2.14.0 
+            2.15.0 
+            2.16.0 
+            2.17.0 Error 404
+3.0.0 Large Phone Styles (min-width: 480px)
+4.0.0 Tablet Styles (min-width: 768px)
+            5.1.0 General Content
+5.0.0 Desktop Styles (min-width: 992px)
+6.0.0 Large Desktop Styles (min-width: 1200px)
+7.0.0 Big Desktop Styles (min-width: 1600px)        ©
+*/
+
+/*Sola Normalize*/
+
+* {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+html {
+  overflow-x: hidden;
+}
+
+body {
+  margin: 0;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+  height: auto;
+}
+
+button,
+[role="button"] {
+  cursor: pointer;
+}
+
+button {
+  background-color: transparent;
+  padding: 0;
+  border-width: 0;
+  border-style: 0;
+  border-color: transparent;
+}
+
+button:focus {
+  outline: 0;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+ul,
+ol {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+/*Sola Utility Classes*/
+
+a.cover-link {
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  content: '';
+  position: absolute;
+}
+
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0
+}
+
+.color-overlay {
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.3);
+  /*Change this line if project requires different color or gradient*/
+  content: '';
+  position: absolute;
+  z-index: -1;
+}
+
+.background-image-wrapper {
+  /*The element containing this class also needs a height set. You can target the element or add a sibling class. Height can be set by padding, min-height, or height, depending upon specific case. The element containing this class needs an <img> with the class .background-image.*/
+  position: relative;
+  overflow: hidden;
+}
+
+img.background-image {
+  /*The parent of the <img> needs to have the .background-image-wrapper class as well as a height set (can be set by padding, min-height, or height, depending upon specific case*/
+  transform: scale(1);
+  transition: transform .6s;
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  z-index: -1;
+}
+
+.background-image-wrapper.scale:hover>img.background-image {
+  transform: scale(1.05);
+}
+
+/* Must Style */
+
+*::selection
+
+/*Can adjust values as needed. This changes highlighte text. */
+  {
+  background-color: #222222;
+  /*Change to Primary Color*/
+  color: #ffffff;
+  /*Change if necessary*/
+}
+
+body {
+  width: 100%;
+  height: 2000px;
+  background: lightgrey;
+  border: 10px white solid;
+  position: relative;
+}
+
+
+.slick-variable-test {
+  width: 100%;
+  background-color: aqua;
+  overflow: hidden;
+}
+
+.slick-variable-test .slick-slide {
+  margin: 10px;
+  padding: 20px;
+  background: red;
+}
+
+.slick-list {
+  width: 90%;
+  overflow: initial;
+}
+
+.invisible {
+  visibility: hidden;
+  opacity: 0;
+  user-select: none;
+}
+
+/* .div-1 {
+  width: 200px;
+  background-color: #fff;
+}
+
+.div-2 {
+  width: 200px;
+  background-color: #2c2c2c;
+}
+.div-3 {
+  width: 180px;
+  background-color: #222222;
+}
+.div-4 {
+  width: 120px;
+  background-color: gray;
+}
+.div-5 {
+  width: 210px;
+  background-color: salmon;
+}
+
+.div-6 {
+  width: 80px;
+  background-color: yellow;
+}
+.div-7 {
+  width: 140px;
+  background-color: green;
+}
+.div-8 {
+  width: 100px;
+  background-color: hotpink;
+}
+.div-9 {
+  width: 140px;
+  background-color: khaki;
+}
+
+.div-10 {
+  width: 200px;
+  background-color: palegreen;
+}
+
+.div-11 {
+  width: 80px;
+  background-color: chocolate;
+}
+
+.div-12 {
+  width: 100px;
+  background-color:darkkhaki;
+} */
